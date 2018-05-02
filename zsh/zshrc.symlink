@@ -9,6 +9,14 @@ export PROJECTS="$HOME/Code"
 export EDITOR='vim'
 export VEDITOR='code'
 
+#WSL stuff
+export GDK_SCALE=2
+export DISPLAY=localhost:0
+export LIBGL_ALWAYS_INDIRECT=1
+if [ -f ~/.dir_colors ]; then
+  eval `dircolors ~/.dir_colors`
+fi
+
 # all of our zsh files
 typeset -U config_files
 config_files=($DOTFILES/*/*.zsh)
@@ -45,3 +53,8 @@ unset config_files updated_at
 # want in your public, versioned repo.
 # shellcheck disable=SC1090
 [ -f ~/.localrc ] && . ~/.localrc
+
+if [ -t 1 ]; then
+  cd ~
+fi
+
