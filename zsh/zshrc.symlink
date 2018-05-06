@@ -1,4 +1,10 @@
 #!/bin/zsh
+
+#nerd fonts
+export POWERLEVEL9K_MODE='nerdfont-complete'
+export POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv nvm)
+export POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator background_jobs history time)
+
 # shortcut to this dotfiles path is $DOTFILES
 export DOTFILES="$HOME/.dotfiles"
 
@@ -13,6 +19,7 @@ export VEDITOR='code'
 export GDK_SCALE=2
 export DISPLAY=localhost:0
 export LIBGL_ALWAYS_INDIRECT=1
+
 if [ -f ~/.dir_colors ]; then
   eval `dircolors ~/.dir_colors`
 fi
