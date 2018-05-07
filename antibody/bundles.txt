@@ -17,8 +17,8 @@ zsh-users/zsh-syntax-highlighting
 zsh-users/zsh-history-substring-search
 
 #theme
-bhilburn/powerlevel9k
-#tyler274/powerlevel9k branch:next
+#bhilburn/powerlevel9k
+tyler274/powerlevel9k branch:next
 
 #nvm
 lukechilds/zsh-nvm

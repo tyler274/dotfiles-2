@@ -7,7 +7,7 @@ export DOTFILES="$HOME/.dotfiles"
 export PROJECTS="$HOME/Code"
 
 # your default editor
-export EDITOR='vim'
+export EDITOR='nano'
 export VEDITOR='code'
 
 #WSL stuff
